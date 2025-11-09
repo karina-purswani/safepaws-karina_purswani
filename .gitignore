@@ -1,0 +1,28 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# PHP / Composer
+vendor/
+composer.lock
+
+# Node
+node_modules/
+
+# XAMPP / runtime / uploads
+/uploads/
+tmp/
+.env
+*.log
+
+# IDE files
+*.sublime-workspace
+*.sublime-project
+
+# Database / secrets
+db.php
+db_connect.php
+config.php
+*.sql

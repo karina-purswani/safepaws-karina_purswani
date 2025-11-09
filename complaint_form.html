@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>File Complaint — Safe Paws</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 font-inter">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="w-10 h-10" alt="logo">
+        <h1 class="text-2xl font-bold text-white">Safe Paws</h1>
+      </div>
+      <ul class="flex gap-6 text-white font-medium">
+        <!--<b><a href="php/citizen_dashboard.php" class="text-slate-600" style="font-size: 20px;">Dashboard</a></b>-->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="max-w-3xl mx-auto px-6 py-10">
+    <div class="bg-white p-8 rounded-2xl shadow">
+      <h2 class="text-xl font-semibold text-slate-800 mb-6">📢 File a Street Dog Complaint</h2>
+
+      <form id="complaintForm" class="space-y-5">
+       <!-- Citizen Name -->
+        <div>
+          <label for="citizenName" class="block text-sm font-medium text-slate-700">Your Name</label>
+          <input type="text" id="citizenName" name="citizenName" required 
+            class="mt-1 w-full border border-slate-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-yellow-400" />
+        </div>
+
+        <!-- Name -->
+        <div>
+          <label for="name" class="block text-sm font-medium text-slate-700">Describe Your Complaint</label>
+          <input type="text" id="name" name="name" required class="mt-1 w-full border border-slate-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-yellow-400" />
+        </div>
+
+        <!-- Area (Dropdown) -->
+        <div>
+          <label for="area" class="block text-sm font-medium text-slate-700">Dog Area</label>
+          <select id="area" name="area" required class="mt-1 w-full border border-slate-300 rounded px-4 py-2 bg-white text-slate-700 focus:outline-none focus:ring focus:ring-yellow-400">
+            <option value="">Select Area</option>
+            <option value="Shivaji Nagar">Shivaji Nagar</option>
+            <option value="College Road">College Road</option>
+            <option value="Panchavati">Panchavati</option>
+            <option value="CIDCO">CIDCO</option>
+            <option value="Gangapur Road">Gangapur Road</option>
+            <option value="Indira Nagar">Indira Nagar</option>
+            <option value="Mahatma Nagar">Mahatma Nagar</option>
+          </select>
+        </div>
+
+        <!-- Upload Image -->
+        <div>
+          <label for="dogImage" class="block text-sm font-medium text-slate-700">Upload Dog Image</label>
+          <input type="file" id="dogImage" name="dogImage" accept="image/*" required class="mt-1 block w-full text-sm text-slate-700 border border-slate-300 rounded px-3 py-2 bg-white file:mr-4 file:py-2 file:px-4 file:border-0 file:bg-yellow-500 file:text-white file:rounded hover:file:bg-yellow-600" />
+        </div>
+
+        <!-- Vaccination Status -->
+        <div>
+          <span class="block text-sm font-medium text-slate-700 mb-1">Is the dog vaccinated?</span>
+          <div class="flex items-center gap-6">
+            <label class="inline-flex items-center">
+              <input type="radio" name="vaccinated" value="yes" required class="text-yellow-500 focus:ring-yellow-500" />
+              <span class="ml-2 text-slate-700">Yes</span>
+            </label>
+            <label class="inline-flex items-center">
+              <input type="radio" name="vaccinated" value="no" required class="text-yellow-500 focus:ring-yellow-500" />
+              <span class="ml-2 text-slate-700">No</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-4">
+          <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded shadow">
+            Submit Complaint
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="text-center text-sm text-slate-500 py-6">© 2025 Safe Paws</footer>
+</body>
+</html>

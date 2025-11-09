@@ -1,0 +1,36 @@
+<!-- admin_vax_stats.html -->
+<div class="p-6">
+  <h2 class="text-2xl font-semibold text-gray-700 mb-6">📊 Vaccination Statistics</h2>
+
+  <!-- 2x2 responsive grid: mobile 1-col, md+ 2-cols -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- 1️⃣ Vaccination Progress Pie Chart -->
+    <div class="p-4 bg-white rounded-2xl shadow flex items-center justify-center">
+      <!-- Use a wrapper with fixed height so Chart.js can render correctly -->
+      <div class="w-96 h-96">
+        <canvas id="statusChart" style="width:100%;height:100%;"></canvas>
+      </div>
+    </div>
+
+    <!-- 2️⃣ Area-wise Phase 1 Chart -->
+    <div class="p-4 bg-white rounded-2xl shadow flex items-center justify-center">
+      <div class="w-96 h-96">
+        <canvas id="areaPhase1Chart" style="width:100%;height:100%;"></canvas>
+      </div>
+    </div>
+
+    <!-- 3️⃣ Area-wise Phase 2 Chart -->
+    <div class="p-4 bg-white rounded-2xl shadow flex items-center justify-center">
+      <div class="w-96 h-96">
+        <canvas id="areaPhase2Chart" style="width:100%;height:100%;"></canvas>
+      </div>
+    </div>
+
+    <!-- 4️⃣ Area-wise Fully Vaccinated Chart -->
+    <div class="p-4 bg-white rounded-2xl shadow flex items-center justify-center">
+      <div class="w-96 h-96">
+        <canvas id="areaFullyChart" style="width:100%;height:100%;"></canvas>
+      </div>
+    </div>
+  </div>
+</div>

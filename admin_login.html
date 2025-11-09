@@ -1,0 +1,82 @@
+<html lang="en">
+<head><title>Admin Login - Safe Paws</title>
+  <script src="https://cdn.tailwindcss.com">
+
+  if (window.history && window.history.pushState) {
+    window.history.pushState(null, null, window.location.href);
+    window.onpopstate = function () {
+        window.history.go(1);
+    };
+  }
+  </script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <nav class="bg-orange-500 p-4 shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      
+      <div class="flex items-center gap-2">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="w-9 h-9" alt="logo">
+        <h1 class="text-xl font-bold text-white">Safe Paws</h1>
+      </div>
+
+      <ul class="flex gap-6 text-white font-medium">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        <li><a href="citizen_login.html" class="hover:underline">Citizens</a></li>
+        <li><a href="admin_login.html" class="hover:underline">Admin</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <section class="flex items-center justify-center min-h-screen px-4">
+    <div class="bg-white shadow-lg rounded-lg w-full max-w-md p-6">
+
+  
+      <div class="text-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="admin" class="w-16 mx-auto">
+        <h2 class="text-2xl font-bold text-gray-800 mt-3">Admin Login</h2>
+        <p class="text-gray-500">Access NMC Dashboard</p>
+      </div>
+
+  
+      <form class="mt-6 space-y-4" action="php/admin_login.php" method="POST">
+        
+  
+        <div>
+          <label class="block text-sm text-gray-700">Username</label>
+          <input type="text" name="username" placeholder="Enter username"
+          class="w-full mt-1 border p-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-400">
+        </div>
+
+        <div>
+          <label class="block text-sm text-gray-700">Password</label>
+          <input type="password" name="password" placeholder="Enter password"
+            class="w-full mt-1 border p-2 rounded focus:outline-none focus:ring-2 focus:ring-orange-400">
+        </div>
+
+  
+        <div class="flex items-center justify-between text-sm">
+          <label class="flex items-center gap-1">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#" class="text-orange-600 hover:underline">Forgot?</a>
+        </div>
+
+        <button type="submit" class="w-full bg-orange-600 text-white py-2 rounded hover:bg-orange-700">
+          Login
+        </button>
+      </form>
+
+
+      <p class="text-center text-sm text-gray-600 mt-5">
+        <a href="index.html" class="text-orange-600 hover:underline">Back Home</a>
+      </p>
+    </div>
+  </section>
+
+
+</body>
+</html>

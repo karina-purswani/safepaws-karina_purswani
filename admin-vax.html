@@ -1,0 +1,19 @@
+<div class="max-w-lg mx-auto bg-white p-6 rounded-xl shadow">
+  <h3 class="text-xl font-semibold mb-4">Update Vaccination Record</h3>
+  <form id="updateVaxForm">
+    <input type="hidden" name="dog_id" id="vaxDogId">
+
+    <label class="block mb-2 font-medium">Vaccination Status</label>
+    <select name="vaccination_status" class="w-full p-2 border rounded mb-4" required>
+      <option value="">Select Status</option>
+      <option value="Vaccination Phase 1 Completed">Vaccination Phase 1 Completed</option>
+      <option value="Vaccination Phase 2 Completed">Vaccination Phase 2 Completed</option>
+      <option value="Fully Vaccinated">Fully Vaccinated</option>
+    </select>
+
+    <label class="block mb-2 font-medium">Vaccination Date</label>
+    <input type="date" name="vaccination_date" id="vaxDate" class="w-full p-2 border rounded mb-4" required>
+
+    <button type="submit" class="bg-amber-600 text-white px-4 py-2 rounded">Update Record</button>
+  </form>
+</div>

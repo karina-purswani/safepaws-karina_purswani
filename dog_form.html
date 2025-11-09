@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Add Dog Details — Safe Paws</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 font-inter">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-gradient-to-r from-yellow-500 to-orange-600 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="w-10 h-10" alt="logo">
+        <h1 class="text-2xl font-bold text-white">Safe Paws</h1>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <div class="max-w-3xl mx-auto px-6 py-10">
+    <div class="bg-white p-8 rounded-2xl shadow">
+      <h2 class="text-xl font-semibold text-slate-800 mb-6">🐾 Add Dog Details</h2>
+
+      <form id="addDogForm" enctype="multipart/form-data" class="space-y-5">
+
+        <!-- Date -->
+        <div>
+          <label for="date" class="block text-sm font-medium text-slate-700">Date</label>
+          <input type="date" id="date" name="date" required
+            class="mt-1 w-full border border-slate-300 rounded px-4 py-2 focus:outline-none focus:ring focus:ring-yellow-400" />
+        </div>
+
+        <!-- Vaccination Status -->
+        <div>
+          <label for="vaccination_status" class="block text-sm font-medium text-slate-700">Vaccination Status</label>
+          <select id="vaccination_status" name="vaccination_status" required
+            class="mt-1 w-full border border-slate-300 rounded px-4 py-2 bg-white text-slate-700 focus:outline-none focus:ring focus:ring-yellow-400">
+            <option value="">Select Vaccination Status</option>
+            <option value="Vaccination Phase 1 Completed">Vaccination Phase 1 Completed</option>
+            <option value="Vaccination Phase 2 Completed">Vaccination Phase 2 Completed</option>
+            <option value="Fully Vaccinated">Fully Vaccinated</option>
+          </select>
+        </div>
+
+        <!-- Dog Area -->
+        <div>
+          <label for="dog_area" class="block text-sm font-medium text-slate-700">Dog Area</label>
+          <select id="dog_area" name="dog_area" required
+            class="mt-1 w-full border border-slate-300 rounded px-4 py-2 bg-white text-slate-700 focus:outline-none focus:ring focus:ring-yellow-400">
+            <option value="">Select Area</option>
+            <option value="Shivaji Nagar">Shivaji Nagar</option>
+            <option value="College Road">College Road</option>
+            <option value="Panchavati">Panchavati</option>
+            <option value="CIDCO">CIDCO</option>
+            <option value="Gangapur Road">Gangapur Road</option>
+            <option value="Indira Nagar">Indira Nagar</option>
+            <option value="Mahatma Nagar">Mahatma Nagar</option>
+          </select>
+        </div>
+
+        <!-- Upload Image -->
+        <div>
+          <label for="dog_image" class="block text-sm font-medium text-slate-700">Upload Dog Image</label>
+          <input type="file" id="dog_image" name="dog_image" accept="image/*" required
+            class="mt-1 block w-full text-sm text-slate-700 border border-slate-300 rounded px-3 py-2 bg-white file:mr-4 file:py-2 file:px-4 file:border-0 file:bg-yellow-500 file:text-white file:rounded hover:file:bg-yellow-600" />
+        </div>
+
+        <!-- Submit -->
+        <div class="pt-4">
+          <button type="submit"
+            class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded shadow">
+            Submit Details
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="text-center text-sm text-slate-500 py-6">© 2025 Safe Paws</footer>
+</body>
+</html>
