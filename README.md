@@ -1,10 +1,22 @@
-# SafePaws
+# 🐾 SafePaws — Stray Dog Management System
 
-Admin dashboard and tools for street dog vaccination tracking.
+SafePaws is a web-based platform designed to help authorities manage stray dog records, vaccination data, and citizen complaints.
 
-## Run locally
-1. Place project in `C:\xampp\htdocs\`.
-2. Start Apache & MySQL in XAMPP.
-3. Create a MySQL database and import `db_dump.sql` (if provided).
-4. Copy `php/db.example.php` to `php/db.php` and add your DB credentials.
-5. Visit: `http://localhost/safepaws/php/admin_dashboard.php`
+## 🧩 Tech Stack
+- Frontend: HTML, CSS (Tailwind), JavaScript  
+- Backend: PHP  
+- Database: MySQL (via XAMPP)
+
+## ⚙️ How to Run Locally
+1. Install [XAMPP](https://www.apachefriends.org/index.html)  
+2. Clone or download this repository  
+3. Place the `safepaws` folder inside:  C:\xampp\htdocs\
+4. Start **Apache** and **MySQL** from XAMPP Control Panel  
+5. Import the project database (`safepaws.sql`) if available  
+6. Open your browser and visit:  http://localhost/safepaws/
+
+
+## 👩‍💻 Developed by
+**Karina Purswani**
+
+
